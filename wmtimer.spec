@@ -14,10 +14,9 @@ BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
 BuildRequires:	glib-devel >= 1.2.0
 BuildRequires:	gtk+-devel >= 1.2.0
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 Wmtimer is a dockable alarm clock for WindowMaker. Wmtimer can be run
