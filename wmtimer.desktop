@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=wmtimer
+Comment=Alarm clock
+Comment[pl]=Budzik
+Exec=wmtimer
+Terminal=0
+Type=Application
