@@ -5,8 +5,6 @@ Version:	2.4
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.dwave.net/~jking/wmtimer/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-opts.patch
