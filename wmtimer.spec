@@ -2,7 +2,7 @@ Summary:	wmtimer - dockable alarm clock for WindowMaker
 Summary(pl):	wmtimer - dokowalny czasomierz z alarmem dla WindowMakera
 Name:		wmtimer
 Version:	2.92
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.darkops.net/wmtimer/%{name}-%{version}.tar.gz
@@ -40,11 +40,10 @@ bezpo¶rednio w linii poleceñ.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}/docklets}
 
 install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
-
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,7 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changelog README CREDITS
-
 %attr(755,root,root) %{_bindir}/%{name}
-
-#%%{_applnkdir}/DockApplets/%{name}.desktop
+%{_desktopdir}/docklets/%{name}.desktop
