@@ -10,7 +10,6 @@ Source0:	http://www.dwave.net/~jking/wmtimer/%{name}-%{version}.tar.gz
 Source1:	wmtimer.desktop
 Patch:		wmtimer-opts.patch
 URL:		http://www.dwave.net/~jking/wmtimer/index.html
-BuildRequires:	xpm-devel
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
