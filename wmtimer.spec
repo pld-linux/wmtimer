@@ -13,7 +13,6 @@ URL:		http://www.dwave.net/~jking/wmtimer/index.html
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
 
 %description
 Wmtimer is a dockable alarm clock for WindowMaker. Wmtimer can be run
