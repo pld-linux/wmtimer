@@ -1,14 +1,15 @@
 Summary:	wmtimer - dockable alarm clock for WindowMaker
 Summary(pl):	wmtimer - dokowalny czasomierz z alarmem dla WindowMakera
 Name:		wmtimer
-Version: 	2.1
+Version:	2.1
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.dwave.net/~jking/wmtimer/%{name}-%{version}.tar.gz
-Source1:	wmtimer.desktop
-Patch:		wmtimer-opts.patch
+Source1:	%{name}.desktop
+Patch0:		%{name}-opts.patch
 URL:		http://www.dwave.net/~jking/wmtimer/index.html
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -18,13 +19,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Wmtimer is a dockable alarm clock for WindowMaker. Wmtimer can be run
 in alarm, coutdown timer, or chronograph mode. In alarm or timer mode
-you can either execute a command or sound the system bell when the time
-is reached, and it is configurable through the command line or the GTK
-GUI.
+you can either execute a command or sound the system bell when the
+time is reached, and it is configurable through the command line or
+the GTK GUI.
 
 %description -l pl
 Wmtimer jest dokowalnym czasomierzem z alarmem dla WindowMakera. Mo¿e
-byæ uruchamiany w trybie 'budzika', stopera odliczaj±cego w dó³, lub 
+byæ uruchamiany w trybie 'budzika', stopera odliczaj±cego w dó³, lub
 chronometru. Dwa pierwsze tryby pozwalaj± na wykonanie polecenia lub
 wys³anie sygna³u d¼wiêkowego w wyznaczonym czasie. Program umo¿liwia
 konfigrowanie okre¶lonych funkcji przez graficzny interfejs w GTK lub
@@ -37,13 +38,13 @@ bezpo¶rednio w linii poleceñ.
 %build
 %{__make} clean -C %{name}
 %{__make} -C %{name} \
-	OPTS="$RPM_OPT_FLAGS -Wall"
+	OPTS="%{rpmcflags} -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets} 
 
-install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
+install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf Bugs Changelog README CREDITS
