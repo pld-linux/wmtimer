@@ -36,8 +36,8 @@ bezpo¶rednio w linii poleceñ.
 %patch -p1
 
 %build
-make clean -C %{name}
-make -C %{name} \
+%{__make} clean -C %{name}
+%{__make} -C %{name} \
 	OPTS="$RPM_OPT_FLAGS -Wall"
 
 %install
