@@ -1,15 +1,15 @@
 Summary:	wmtimer - dockable alarm clock for WindowMaker
 Summary(pl):	wmtimer - dokowalny czasomierz z alarmem dla WindowMakera
 Name:		wmtimer
-Version:	2.4
+Version:	2.9
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://www.dwave.net/~jking/wmtimer/%{name}-%{version}.tar.gz
-# Source0-md5:	563ff8c7a7c880a0babf16e4ad972f94
+Source0:	http://www.darkops.net/wmtimer/%{name}-%{version}.tar.gz
+# Source0-md5:	8b27b8ed159a8110a5e52920c147096c
 Source1:	%{name}.desktop
 Patch0:		%{name}-opts.patch
-URL:		http://www.dwave.net/~jking/wmtimer/index.html
+URL:		http://www.darkops.net/wmtimer/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
