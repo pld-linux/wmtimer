@@ -1,22 +1,22 @@
---- wmtimer-2.0/wmtimer/Makefile~	Fri Nov  5 23:21:00 1999
-+++ wmtimer-2.0/wmtimer/Makefile	Wed Nov 17 23:50:08 1999
+--- wmtimer-2.1.pius/wmtimer/Makefile	Thu Dec 23 16:01:39 1999
++++ wmtimer-2.1/wmtimer/Makefile	Mon Jan 17 15:11:38 2000
 @@ -1,16 +1,17 @@
  LIBDIR = -L/usr/X11R6/lib -L/usr/lib
  LIBS   = -lXpm -lXext -lX11 -lm  -lgtk -lgdk -rdynamic -lgmodule -lglib -ldl 
  CFLAGS = -I/usr/X11R6/include -I/usr/lib/glib/include
-+OPTS   = -O2 -g
++OPTS = -O2 -Wall -g
  OBJS =	wmtimer.o \
  		../wmgeneral/wmgeneral.o \
  		../wmgeneral/misc.o \
  		../wmgeneral/list.o
  
  .c.o:
--	cc -c -O2 -Wall $< -o $*.o
-+	cc -c $(OPTS) $(CFLAGS) -Wall $< -o $*.o
+-	cc -c -O2 -Wall $< -o $*.o $(CFLAGS)
++	cc -c $(OPTS) $< -o $*.o $(CFLAGS)
  
  wmtimer: $(OBJS)
--	cc -Wall -g -o wmtimer $^ $(LIBDIR) $(LIBS) $(CFLAGS)
-+	cc -Wall -o wmtimer $^ $(LIBDIR) $(LIBS) $(CFLAGS)
+-	cc -Wall -g -o wmtimer $^ $(LIBDIR) $(LIBS)
++	cc $(OPTS) -o wmtimer $^ $(LIBDIR) $(LIBS)
  
  clean::
  	for i in $(OBJS) ; do \
