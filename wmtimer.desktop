@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=wmtimer
+Name=WmTimer
 Comment=Alarm clock
 Comment[pl]=Budzik
 Exec=wmtimer
