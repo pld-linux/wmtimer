@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.dwave.net/~jking/wmtimer/%{name}-%{version}.tar.gz
+# Source0-md5:	563ff8c7a7c880a0babf16e4ad972f94
 Source1:	%{name}.desktop
 Patch0:		%{name}-opts.patch
 URL:		http://www.dwave.net/~jking/wmtimer/index.html
