@@ -19,14 +19,14 @@ Wmtimer is a dockable alarm clock for WindowMaker. Wmtimer can be run
 in alarm, coutdown timer, or chronograph mode. In alarm or timer mode
 you can either execute a command or sound the system bell when the
 time is reached, and it is configurable through the command line or
-the GTK GUI.
+the GTK+ GUI.
 
 %description -l pl
 Wmtimer jest dokowalnym czasomierzem z alarmem dla WindowMakera. Mo¿e
 byæ uruchamiany w trybie 'budzika', stopera odliczaj±cego w dó³, lub
 chronometru. Dwa pierwsze tryby pozwalaj± na wykonanie polecenia lub
 wys³anie sygna³u d¼wiêkowego w wyznaczonym czasie. Program umo¿liwia
-konfigrowanie okre¶lonych funkcji przez graficzny interfejs w GTK lub
+konfigrowanie okre¶lonych funkcji przez graficzny interfejs w GTK+ lub
 bezpo¶rednio w linii poleceñ.
 
 %prep
