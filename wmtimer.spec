@@ -1,5 +1,5 @@
 Summary:	wmtimer - dockable alarm clock for WindowMaker
-Summary(pl):	wmtimer - dokowalny czasomierz z alarmem dla WindowMakera
+Summary(pl.UTF-8):   wmtimer - dokowalny czasomierz z alarmem dla WindowMakera
 Name:		wmtimer
 Version:	2.92
 Release:	2
@@ -22,13 +22,13 @@ you can either execute a command or sound the system bell when the
 time is reached, and it is configurable through the command line or
 the GTK+ GUI.
 
-%description -l pl
-Wmtimer jest dokowalnym czasomierzem z alarmem dla WindowMakera. Moøe
-byÊ uruchamiany w trybie 'budzika', stopera odliczaj±cego w dÛ≥, lub
-chronometru. Dwa pierwsze tryby pozwalaj± na wykonanie polecenia lub
-wys≥anie sygna≥u dºwiÍkowego w wyznaczonym czasie. Program umoøliwia
-konfigurowanie okre∂lonych funkcji przez graficzny interfejs w GTK+ lub
-bezpo∂rednio w linii poleceÒ.
+%description -l pl.UTF-8
+Wmtimer jest dokowalnym czasomierzem z alarmem dla WindowMakera. Mo≈ºe
+byƒá uruchamiany w trybie 'budzika', stopera odliczajƒÖcego w d√≥≈Ç, lub
+chronometru. Dwa pierwsze tryby pozwalajƒÖ na wykonanie polecenia lub
+wys≈Çanie sygna≈Çu d≈∫wiƒôkowego w wyznaczonym czasie. Program umo≈ºliwia
+konfigurowanie okre≈õlonych funkcji przez graficzny interfejs w GTK+ lub
+bezpo≈õrednio w linii polece≈Ñ.
 
 %prep
 %setup -q
