@@ -1,5 +1,5 @@
 Summary:	wmtimer - dockable alarm clock for WindowMaker
-Summary(pl.UTF-8):   wmtimer - dokowalny czasomierz z alarmem dla WindowMakera
+Summary(pl.UTF-8):	wmtimer - dokowalny czasomierz z alarmem dla WindowMakera
 Name:		wmtimer
 Version:	2.92
 Release:	2
